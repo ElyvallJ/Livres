@@ -13,10 +13,25 @@ internal class Program
         List<Revue> Revues = new List<Revue> { revue1, revue2, revue3 };
 
 
-        Console.WriteLine("les livres dans la liste, leurs details est :");
+        Console.WriteLine("les revues sont  :");
         foreach (var Revue in Revues)
         {
             Revue.AfficherDetails();
+        }
+
+        // les instances de la classe Roman
+        Roman roman1 = new Roman("l'enfant noir", "Camara Laye", 221, "Hisoire");
+        Roman roman2 = new Roman("Maimouna", "Abdoulaye Sadji", 251, "Education");
+        Roman roman3 = new Roman("soue l'orage", "Seydou Badian", 253, "Conflit");
+
+        // la création d'une liste et l'ajout des élèments dans la liste
+        List<Roman> Romans = new List<Roman> { roman1,roman2,roman3 };
+
+
+        Console.WriteLine("les romans sont :");
+        foreach (var Roman in Romans)
+        {
+            Roman.AfficherDetails();
         }
     }
 }
